@@ -34,6 +34,10 @@ contract CurveV1RemoveLiquidityTest is Test {
     // withdraw all LP for 3 stablecoins (DAI, USDC, USDT)
     function test_remove_liquidity() public {
         // Write your code here
+        uint256 lpBal = lp.balanceOf(address(this));
+
+        uint256[3] memory minCoins = [uint256(1), uint256(1), uint256(1)];
+        pool.remove_liquidity(lpBal, minCoins);
 
         assertEq(lp.balanceOf(address(this)), 0, "3CRV balance > 0");
 
@@ -58,6 +62,10 @@ contract CurveV1RemoveLiquidityTest is Test {
     // withdraw all LP for a single stablecoin (DAI)
     function test_remove_liquidity_one_coin() public {
         // Write your code here
+        uint256 lpBal = lp.balanceOf(address(this));
+        pool.remove_liquidity_one_coin(lpBal, 0, 1);
+
+        assertEq(lp.balanceOf(address(this)), 0, "3CRV balance > 0");
 
         uint256 bal = 0;
 

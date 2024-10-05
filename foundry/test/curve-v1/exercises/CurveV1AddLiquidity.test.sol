@@ -30,7 +30,7 @@ contract CurveV1AddLiquidityTest is Test {
     // Add 1,000,000 DAI of liquidity to the pool contract
     function test_add_liquidity() public {
         // Write your code here
-
+        pool.add_liquidity([uint256(1e6 * 1e18), 0, 0], 1);
         uint256 lpBal = lp.balanceOf(address(this));
         assertGt(lpBal, 0);
     }

@@ -112,7 +112,7 @@ Check out the videos on [Cyfrin Updraft](https://updraft.cyfrin.io/courses/curve
 > - How the functions to remove liquidity are implemented
 
 - [Contract calls](./excalidraw/amm/curve-v1/curve-v1-contract.png)
-- Code walkthrough [`remove_liquidity`](https://github.com/curvefi/curve-contract/blob/b0bbf77f8f93c9c5f4e415bce9cd71f0cdee960e/contracts/pools/3pool/StableSwap3Pool.vy#L496-L524)
+- Code walkthrough [`remove_liquidity`](https://github.com/curvefi/curve-contract/blob/b0bbf77f8f93c9c5f4e415bce9cd71f0cdee960e/contracts/pools/3pool/StableSwap3 Pool.vy#L496-L524)
 - Graph [calc_withdraw_one_coin](https://www.desmos.com/calculator/6kbxhaq7xv)
 - Code walkthrough [`remove_liquidity_one_coin`](https://github.com/curvefi/curve-contract/blob/b0bbf77f8f93c9c5f4e415bce9cd71f0cdee960e/contracts/pools/3pool/StableSwap3Pool.vy#L668-L697)
   - Code walkthrough [`_calc_withdraw_one_coin`](https://github.com/curvefi/curve-contract/blob/b0bbf77f8f93c9c5f4e415bce9cd71f0cdee960e/contracts/pools/3pool/StableSwap3Pool.vy#L628-L659)
